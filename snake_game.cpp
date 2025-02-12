@@ -37,7 +37,7 @@ public:
                 speed = 130; // Default speed for medium
                 break;
             case HARD:
-                speed = 90; // Fast speed for hard mode
+                speed = 100; // Fast speed for hard mode
                 break;
         }
     }
