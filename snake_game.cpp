@@ -45,11 +45,14 @@ public:
     void resetGame() {
         gameOver = false;
         score = 0;
-        dir = STOP;
+        dir = RIGHT;
         x = width / 2;
         y = height / 2;
         snake.clear();
         snake.push_back({x, y});
+        snake.push_back({x-1, y});
+        
+
         foodX = rand() % width;
         foodY = rand() % height;
         generateObstacles();
@@ -57,7 +60,7 @@ public:
 
     void generateObstacles() {
         obstacles.clear();
-        int numObstacles = (width * height) / 200; // 10% of the grid will have obstacles
+        int numObstacles = (width * height) / 200; 
         for (int i = 0; i < numObstacles; i++) {
             int ox = rand() % width;
             int oy = rand() % height;
