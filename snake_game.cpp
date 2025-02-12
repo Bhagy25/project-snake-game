@@ -31,13 +31,13 @@ public:
         currentDifficulty = difficulty;
         switch (currentDifficulty) {
             case EASY:
-                speed = 150; // Slow speed for easy mode
+                speed = 170; // Slow speed for easy mode
                 break;
             case MEDIUM:
-                speed = 110; // Default speed for medium
+                speed = 130; // Default speed for medium
                 break;
             case HARD:
-                speed = 70; // Fast speed for hard mode
+                speed = 90; // Fast speed for hard mode
                 break;
         }
     }
